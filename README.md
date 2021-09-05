@@ -53,7 +53,7 @@ Step 4
  
  ## Build
   ```sh 
-1. git checkout 
+1. git clone https://github.com/kunalshaha/transaction-assignment.git
 ```  
 ```sh 
 2. cd assignment
