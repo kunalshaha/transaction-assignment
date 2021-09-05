@@ -62,7 +62,7 @@ Step 4
 3.  mvn clean install -DskipTests
 ```
 ```sh
-4. cd assignment/target/
+4. cd target/
 ``` 
  - In step 4  this  {}/apps path will be mapped as volume -> /opt/spark-apps in docker 
 
@@ -80,7 +80,7 @@ Step 4
     
 - After docker is Up  , run the below command
  ```sh    
-  8.    docker  exec -it   docker-spark-cluster_spark-master_1 /opt/spark/bin/spark-submit --deploy-mode client  --master spark://spark-master:7077 --num-executors 1 --total-executor-cores 1 --executor-cores 1 --executor-memory 1g --driver-memory 1g --class transactions.TransactionProcessor  /opt/spark-apps/assignment-1.0-SNAPSHOT-jar-with-dependencies.jar
+  8.    docker  exec -it   transaction-assignment_spark-master_1 /opt/spark/bin/spark-submit --deploy-mode client  --master spark://spark-master:7077 --num-executors 1 --total-executor-cores 1 --executor-cores 1 --executor-memory 1g --driver-memory 1g --class transactions.TransactionProcessor  /opt/spark-apps/assignment-1.0-SNAPSHOT-jar-with-dependencies.jar
  ```  
 - After running the above command , output folder will be created in the {}/data which is the volume mapped in step 5
  ```sh   
