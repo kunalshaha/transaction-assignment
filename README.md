@@ -4,6 +4,7 @@
 - Docker
 
 ## Tech
+  - JDK 1.8
   - maven
   - Scala 2.4.6
   - Spark 3.0.1 (Docker container)
@@ -13,7 +14,7 @@
  
  STEP 1
 - Account Data :  As  only the transaction data is needed ,  filtered only the data which is relevant , ie i have used only 'u' update operation data  as it contains the linked accounts for savings & credit cards .
-- Credit Card : Credit information also is avaialble in update operations only , so filtering the same gives the transactions .
+- Credit Card : Credit information also is available in update operations only , so filtering the same gives the transactions .
 - Savings Account : Savings also is avaialble in update operations only , so filtering the same gives the transactions in savings account.
 
 STEP 2    
